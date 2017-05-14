@@ -1,0 +1,4 @@
+C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\bin\Release\Pry_Histodontology.Data.dll
+C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\bin\Release\Pry_Histodontology.Data.pdb
+C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\obj\Release\Pry_Histodontology.Data.dll
+C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\obj\Release\Pry_Histodontology.Data.pdb

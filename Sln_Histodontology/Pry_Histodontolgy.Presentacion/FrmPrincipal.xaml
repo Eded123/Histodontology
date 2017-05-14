@@ -1,0 +1,178 @@
+﻿<Window x:Class="Pry_Histodontolgy.Presentacion.FrmPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FrmPrincipal" Height="691" Width="1021" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<Style x:Key="btnAbajoArriba" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<ControlTemplate.Resources>
+							<Storyboard x:Key="clickbtnAbajoArriba">
+								<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="btnabajoarriba">
+									<SplineDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</ControlTemplate.Resources>
+						<Grid>
+							<Path x:Name="btnabajoarriba" Data="F1 M 312.538,149.167L 301.831,172.35L 322.865,172.36L 312.538,149.167 Z " Fill="White" Opacity="0.495" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Stroke="White" StrokeLineJoin="Round">
+								<Path.RenderTransform>
+									<TransformGroup>
+										<ScaleTransform ScaleY="-1" ScaleX="1"/>
+										<SkewTransform AngleY="0" AngleX="0"/>
+										<RotateTransform Angle="0"/>
+										<TranslateTransform/>
+									</TransformGroup>
+								</Path.RenderTransform>
+							</Path>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content=""/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Trigger.ExitActions>
+									<StopStoryboard BeginStoryboardName="clickbtnAbajoArriba_BeginStoryboard"/>
+								</Trigger.ExitActions>
+								<Trigger.EnterActions>
+									<BeginStoryboard x:Name="clickbtnAbajoArriba_BeginStoryboard" Storyboard="{StaticResource clickbtnAbajoArriba}"/>
+								</Trigger.EnterActions>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="btnSalir2" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<ControlTemplate.Resources>
+							<Storyboard x:Key="btnSalirMouseEnter">
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="label" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="White"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</ControlTemplate.Resources>
+						<Canvas x:Name="btnSalir" Margin="0,0,-4.167,-11.458">
+							<Rectangle x:Name="rectangle" Stroke="#FFB7B7B7" Width="26.664" Height="36.372" Canvas.Top="3.336" Opacity="0">
+								<Rectangle.Effect>
+									<BlurEffect Radius="20"/>
+								</Rectangle.Effect>
+								<Rectangle.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="Red" Offset="0"/>
+										<GradientStop Color="Red" Offset="1"/>
+									</LinearGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<Label x:Name="label" Width="24" Height="39.708" Content="x" FontFamily="Arial" FontSize="26.667" Foreground="#FF959595" Canvas.Left="2.664" Background="#00FF8181"/>
+						</Canvas>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Trigger.ExitActions>
+									<StopStoryboard BeginStoryboardName="btnSalirMouseEnter_BeginStoryboard"/>
+								</Trigger.ExitActions>
+								<Trigger.EnterActions>
+									<BeginStoryboard x:Name="btnSalirMouseEnter_BeginStoryboard" Storyboard="{StaticResource btnSalirMouseEnter}"/>
+								</Trigger.EnterActions>
+								<Setter Property="Effect" TargetName="rectangle">
+									<Setter.Value>
+										<BlurEffect Radius="20"/>
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid Margin="0,-1.559,-1,0">
+			<Rectangle x:Name="Rectangulo_Contenedor" Margin="0,1.559,1,0">
+				<Rectangle.Fill>
+	
+					<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+						<GradientStop Color="#FF141414"/>
+						<GradientStop Color="#FF03004B" Offset="0.829"/>
+						<GradientStop Color="#FF05003D" Offset="1"/>
+						<GradientStop Color="#FF5A5A5A" Offset="0.433"/>
+					</LinearGradientBrush>
+
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle VerticalAlignment="Top" Height="63.055" >
+				<Rectangle.Fill>
+	
+				<!-- DefaultedBorderBrush is used to show KeyBoardFocus -->
+					<LinearGradientBrush EndPoint="0.224,1.098" StartPoint="0.266,0.046">
+						<GradientStop Offset="1" Color="#006A6A6A"/>
+						<GradientStop Color="#8D01001D" Offset="0.973"/>
+					</LinearGradientBrush>
+
+				</Rectangle.Fill>
+			</Rectangle>
+		</Grid>
+		<Rectangle Margin="4,63.055,4,8">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="0.152,0.456" StartPoint="1.004,0.46">
+					<GradientStop Color="White"/>
+					<GradientStop Color="White" Offset="0.996"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+			<Rectangle.Stroke>
+				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+					<GradientStop Color="#FFFFE281" Offset="0.0"/>
+					<GradientStop Color="#FFFFE281" Offset="1.0"/>
+					<GradientStop Color="White" Offset="0.25"/>
+					<GradientStop Color="White" Offset="0.724"/>
+				</LinearGradientBrush>
+			</Rectangle.Stroke>
+		</Rectangle>
+		<Label Content="Histo" FontSize="32" Foreground="White" Background="#00FF0000" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24.287,3.687,0,0" FontWeight="Bold"/>
+		<Label Content="dontology" Foreground="White" HorizontalAlignment="Left" Margin="105.17,16.622,0,0" VerticalAlignment="Top" FontSize="18.667" Width="111.576"/>
+		<Button x:Name="btnAbajo" Content="Button" Height="11.677" Style="{DynamicResource btnAbajoArriba}" Width="16.966" HorizontalAlignment="Right" Margin="0,91.501,13.019,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Separator Margin="14.653,89.639,11.888,0" VerticalAlignment="Top" Height="10.699" RenderTransformOrigin="0.5,0.5" Background="#FFE6E6E6">
+			<Separator.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="180.001"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Separator.RenderTransform>
+		</Separator>
+		<Menu x:Name="MenuItem" Margin="4,64.317,4,0" Height="27.911" VerticalAlignment="Top" Background="White">
+			<MenuItem x:Name="ItemSalir" Header="Salir" FontSize="16" Height="27.25" Foreground="#FF7A7A7A" Click="ItemSalir_Click" />
+			<MenuItem Header="Ingresar" FontSize="16" Height="27.25" Foreground="#FF7A7A7A">
+				<MenuItem x:Name="ItmPacientes" Header="Pacientes" Click="ItmPacientes_Click"  />
+				<MenuItem x:Name="ItmCitas" Header="Citas" Click="ItmCitas_Click" />
+				<MenuItem x:Name="itemUsuario" Header="Usuario" Click="itemUsuario_Click" />
+			</MenuItem>
+			<MenuItem x:Name="ItemReporte" Header="Reporte" FontSize="16" Height="27.25" Foreground="#FF7A7A7A" Click="ItemReporte_Click" />
+		</Menu>
+		<Button x:Name="btnSalir" HorizontalAlignment="Right" Margin="0,10.515,23.336,0" Style="{DynamicResource btnSalir2}" VerticalAlignment="Top" Width="26.664" Height="39.949" Content="Button"  IsTabStop="False" TabIndex="12" Click="btnSalir_Click" />
+	</Grid>
+</Window>
