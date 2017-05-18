@@ -3,3 +3,8 @@ C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Hist
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.csprojResolveAssemblyReference.cache
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.dll
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.pdb
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Common\bin\Debug\Pry_Histodontology.Common.dll
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Common\bin\Debug\Pry_Histodontology.Common.pdb
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.csprojResolveAssemblyReference.cache
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.dll
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Common\obj\Debug\Pry_Histodontology.Common.pdb

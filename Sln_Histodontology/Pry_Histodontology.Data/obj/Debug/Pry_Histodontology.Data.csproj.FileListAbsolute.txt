@@ -2,3 +2,7 @@ C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Hist
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\bin\Debug\Pry_Histodontology.Data.pdb
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\obj\Debug\Pry_Histodontology.Data.dll
 C:\Users\Hogar\Documents\Visual Studio 2010\Projects\Sln_Histodontology\Pry_Histodontology.Data\obj\Debug\Pry_Histodontology.Data.pdb
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Data\bin\Debug\Pry_Histodontology.Data.dll
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Data\bin\Debug\Pry_Histodontology.Data.pdb
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Data\obj\Debug\Pry_Histodontology.Data.dll
+C:\Users\Hogar\Documents\GitHub\Histodontology\Sln_Histodontology\Pry_Histodontology.Data\obj\Debug\Pry_Histodontology.Data.pdb
